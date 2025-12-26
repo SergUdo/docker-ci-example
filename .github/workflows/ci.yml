@@ -14,3 +14,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t docker-ci-example .
+
+      - name: Validate docker-compose config
+        run: docker compose config
